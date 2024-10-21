@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(239, 160, 170);
+    gap: 20px; /* Adds space between the two divs */
+}
+
+.selector {
+    width: 300px; /* Increased width */
+    height: 300px; /* Increased height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px; /* Slightly larger font */
+    transition: transform 0.5s; /* Smooth transition */
+}
+
+#div1 {
+    background-color: rgb(68, 229, 229); /* Color for the first div */
+}
+
+#div2 {
+    background-color: rgb(166, 101, 231); /* Color for the second div */
+}
+
+#div3 {
+    background-color: rgb(146, 230, 152); /* Color for the second div */
+}
+
+#div4 {
+    background-color: rgb(22, 51, 237); /* Color for the second div */
+}
+
+.selector:hover {
+    transform: rotate(360deg) scale(1.5) translate(100px, 100px); /* Adjust scale and translate */
+}
