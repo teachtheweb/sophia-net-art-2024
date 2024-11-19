@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Online: Net Art about Love</title>
+
+    <style>
+     
+        body {
+            font-family: 'Georgia', serif; 
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #4756ff; 
+        }
+
+        header {
+            background-color: #87aafb;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Helvetica', sans-serif; 
+        }
+
+        h1, h2 {
+            font-family: 'Arial', sans-serif; 
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+            justify-content: space-between;
+        }
+
+        .work {
+            background-color: rgb(255, 109, 165);
+            margin: 15px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 30%;
+            transition: transform 0.3s ease;
+        }
+
+        .work:hover {
+            transform: translateY(-10px);
+        }
+
+        .work img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .work a {
+            color: #0077cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+       
+        @media screen and (max-width: 768px) {
+            .work {
+                flex: 1 1 100%;
+            }
+
+            header {
+                padding: 15px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+        }
+
+       
+        .curatorial-text {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #ec4e9b;
+            border-radius: 5px;
+            font-family: 'Georgia', serif; 
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Love Online: Net Art about Love</h1>
+    <p>Exhibition curated by Sophia Khodorkovsky</p>
+</header>
+
+<div class="curatorial-text">
+    <p>The works in this exhibition will explore love and intimacy through the digital lens, reflecting on how the internet has reshaped human connections since the beginning of its development. 
+        “LOVE”, from GROUP Z in 1995, used an early Internet browsing aesthetic as a means of interactive exploration of affection through text. 
+        "My boyfriend came back from the war" by Olia Lialina from 1996 is representative of the emotional binds one could have with the early web aesthetic developments, showing the struggle of absence and reunion through digital space. 
+        In “SKINONSKINONSKIN”, 1999, by ENTROPY8ZUPER! boundaries are broken between physical and digital love through imagery and text. These works together look at the intersection of relationships, technology, and narrative in a rapidly changing digital landscape and offer reflections on the evolution of desire and connection in the digital age.</p>
+</div>
+
+<div class="container">
+    <div class="work">
+        <h2>"LOVE" (1995) by Group Z</h2>
+        <p><strong>Artist:</strong> Group Z</p>
+        <img src="img/love.png" alt="Love by Group Z">
+        <p>This piece uses early internet aesthetics to create an interactive exploration of the stages of love. 
+            Through a combination of text and images, users navigate through different phases of affection, making the digital space a fun and reflective space for exploring human connection. 
+            The work captures the early experimental potential of the internet as a place for personal and emotional engagement.</p>
+        <p><a href="https://sites.rhizome.org/anthology/LOVE.html" target="_blank">View the work</a></p>
+    </div>
+
+    <div class="work">
+        <h2>"My boyfriend came back from the war" (1996) by Olia Lialina</h2>
+        <p><strong>Artist:</strong> Olia Lialina</p>
+        <img src="img/war.png" alt="My boyfriend came back from the war by Olia Lialina">
+        <p>This piece captures the emotional complexity of long-distance love and the impact of separation due to war. 
+            Through a web page structure that simulates the emotional experience of waiting and reunion, Lialina uses the internet's 
+            early aesthetic to underscore the distance between lovers and the rawness of digital communication in the face of longing and reunion.</p>
+        <p><a href="http://www.teleportacia.org/war/" target="_blank">View the work</a></p>
+    </div>
+
+    <div class="work">
+        <h2>"SKINONSKINONSKIN" (1999) by ENTROPY8ZUPER!</h2>
+        <p><strong>Artists:</strong> Auriea Harvey & Michaël Samyn</p>
+        <img src="img/letters.png" alt="SKINONSKINONSKIN by ENTROPY8ZUPER!">
+        <p>A collaboration between artists Auriea Harvey and Michaël Samyn, this work uses text, audio, and images to tell a live, evolving love story between the two artists.
+            The piece plays with the boundaries between the physical and the digital, offering an intimate and experimental portrayal of digital love. 
+            Through this project, ENTROPY8ZUPER! explores the fusion of emotional expression and technology, offering a deeply personal reflection on how love can be highlighted through digital means.</p>
+        <p><a href="https://sites.rhizome.org/anthology/skinonskinonskin.html" target="_blank">View the work</a></p>
+    </div>
+</div>
+
+</body>
+</html>
