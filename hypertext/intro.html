@@ -50,10 +50,13 @@
     <title>A Day in New York City</title>
 </head>
 <body>
-    <audio autoplay loop>
+    
+    
+    <!--THIS IS JUST A NOTE: I REMOVED AUTOPLAY FROM THIS AUDIO HTML-->
+    <audio id="audio" loop preload="auto">
         <source src="https://sophiakho1.github.io/sophia-net-art-2024/audio/wakeup.mp3" type="audio/mpeg">
-        
     </audio>
+
     <h1><strong>A Day in New York City</strong></h1>
     <img src="intro.jpg" alt="wake up">
     <p>
@@ -63,5 +66,26 @@
         <a href="page2.html">Walk to the subway</a><br>
         <a href="page3.html">Go to Central Park</a>
     </p>
+    
+    <!--I ADDED THIS BUTTON TO TOGGLE AUDIO ON/OFF ON PAGE-->
+    <button id="toggleAudio">play/pause audio</button>
+
+    <!--AND THIS IS SOME Javascript THAT JUST PLAYS/PAUSES THEE AUDIO WHEN THE BUTTON IS PRESSED-->
+    <script>
+        const audioElement = document.getElementById('audio');
+        const toggleButton = document.getElementById('toggleAudio');
+
+        toggleButton.addEventListener('click', () => {
+            if (audioElement.paused) {
+                audioElement.play()
+                    .then(() => {
+                        toggleButton.textContent = 'pause audio';
+                    });
+            } else {
+                audioElement.pause();
+                toggleButton.textContent = 'play audio';
+            }
+        });
+    </script>
 </body>
 </html>
